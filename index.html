@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  告诉搜索引擎不要索引此页面 -->
     <meta name="robots" content="noindex, nofollow">
     <title>域名出售</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--  使用在中国大陆地区更易访问的字体服务地址 -->
     <link href="https://fonts.googleapis.cn/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         @keyframes gradientAnimation {
@@ -22,74 +20,74 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: #e5e7eb; /* Tailwind gray-200 for light text on dark bg */
+            color: #e5e7eb; /* Tailwind gray-200 */
             text-align: center;
-            padding: 1rem; /* Default padding for small screens */
-            /* Adjusted gradient: lighter greens */
-            background: linear-gradient(270deg, #000000, #004d00, #008700, #000000); /* Black, Darker Green, Lighter Green, Black */
+            padding: 1rem;
+            background: linear-gradient(270deg, #000000, #004d00, #008700, #000000);
             background-size: 300% 300%;
             animation: gradientAnimation 15s ease infinite;
-            overflow-x: hidden; /* Prevent horizontal scroll from gradient animation */
+            overflow-x: hidden;
         }
 
         .container {
             background-color: rgba(17, 24, 39, 0.85); /* Tailwind gray-900 with opacity */
-            padding: 2rem; /* Adjusted padding */
-            border-radius: 1rem; /* Tailwind rounded-2xl */
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2); /* Darker shadow */
-            max-width: 768px; /* Tailwind md:max-w-3xl, slightly wider for two columns, but not too wide */
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            max-width: 768px;
             width: 100%;
-            border: 1px solid #374151; /* Tailwind gray-700 border */
+            border: 1px solid #374151; /* Tailwind gray-700 */
             position: relative;
             z-index: 1;
         }
 
         .domain-name {
-            font-size: 2.25rem; /* Tailwind text-3xl, adjusted for overall layout */
+            font-size: 2.25rem;
             font-weight: 700;
-            color: #10b981; /* Tailwind emerald-500 - Bright Green */
-            margin-bottom: 1.5rem; /* Adjusted margin */
+            color: #10b981; /* Tailwind emerald-500 */
+            margin-bottom: 1.5rem; /* Adjusted margin after removing local counter */
             word-break: break-all;
             line-height: 1.3;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
 
+        /* Removed .visit-counter styles as the element is removed */
+
         .status {
-            font-size: 1.125rem; /* Tailwind text-lg */
-            color: #6ee7b7; /* Tailwind emerald-300 - Lighter Green */
-            margin-bottom: 2rem; /* Adjusted margin */
+            font-size: 1.125rem;
+            color: #6ee7b7; /* Tailwind emerald-300 */
+            margin-bottom: 2rem;
             font-weight: 600;
         }
 
-        /* Flex container for side-by-side sections */
         .info-columns {
             display: flex;
-            flex-direction: column; /* Stack on small screens */
-            gap: 1.5rem; /* Space between columns/rows */
-            margin-bottom: 2rem; /* Space below the columns section */
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .info-section {
             text-align: left;
-            padding: 1.25rem; /* Adjusted padding for sections */
+            padding: 1.25rem;
             background-color: rgba(31, 41, 55, 0.7); /* Tailwind gray-800 with opacity */
             border-radius: 0.5rem;
-            border: 1px solid #4b5563; /* Tailwind gray-600 border for sections */
-            flex: 1; /* Allow sections to grow equally */
-            min-width: 0; /* Prevent flex overflow issues */
+            border: 1px solid #4b5563; /* Tailwind gray-600 */
+            flex: 1;
+            min-width: 0;
         }
 
         .info-section h2 {
-            font-size: 1.125rem; /* Tailwind text-lg, adjusted */
+            font-size: 1.125rem;
             font-weight: 600;
             margin-bottom: 1rem;
-            color: #a7f3d0; /* Tailwind emerald-200 - Very Light Green */
-            border-bottom: 2px solid #059669; /* Tailwind emerald-600 accent */
+            color: #a7f3d0; /* Tailwind emerald-200 */
+            border-bottom: 2px solid #059669; /* Tailwind emerald-600 */
             padding-bottom: 0.5rem;
         }
 
         .info-section p {
-            font-size: 0.95rem; /* Adjusted for a tighter layout */
+            font-size: 0.95rem;
             line-height: 1.6;
             color: #d1d5db; /* Tailwind gray-300 */
             margin-bottom: 0.5rem;
@@ -100,39 +98,49 @@
         }
 
         .highlight {
-            color: #34d399; /* Tailwind emerald-400 - Medium Green */
+            color: #34d399; /* Tailwind emerald-400 */
             font-weight: 700;
-            font-size: 1rem; /* Adjusted */
+            font-size: 1rem;
         }
 
         .contact-link {
-            color: #6ee7b7; /* Tailwind emerald-300 for links */
+            color: #6ee7b7; /* Tailwind emerald-300 */
             text-decoration: none;
             font-weight: 600;
         }
 
         .contact-link:hover {
             text-decoration: underline;
-            color: #a7f3d0; /* Tailwind emerald-200 for link hover */
+            color: #a7f3d0; /* Tailwind emerald-200 */
         }
 
         .footer {
-            margin-top: 2rem; /* Adjusted margin */
+            margin-top: 2rem;
             font-size: 0.875rem;
             color: #9ca3af; /* Tailwind gray-400 */
         }
+        /* Styling for Busuanzi counter */
+        #busuanzi_container_site_pv, #busuanzi_container_page_pv {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #9ca3af; /* Match footer text color */
+        }
+         #busuanzi_value_site_pv, #busuanzi_value_page_pv {
+            color: #a7f3d0; /* Lighter green for the number */
+            font-weight: 600;
+        }
 
-        /* Message Box Styling for Dark Theme */
+
         .message-box {
             position: fixed;
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #059669; /* Tailwind emerald-600 for success */
-            color: #ffffff; /* White text */
+            background-color: #059669; /* Tailwind emerald-600 */
+            color: #ffffff;
             padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Darker shadow */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
             z-index: 1000;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
@@ -142,14 +150,13 @@
             opacity: 1;
         }
         .message-box.error {
-            background-color: #ef4444; /* Tailwind red-500 for errors */
+            background-color: #ef4444; /* Tailwind red-500 */
             color: #ffffff;
         }
 
-        /* Responsive adjustments for medium screens and up */
         @media (min-width: 768px) { /* Tailwind 'md' breakpoint */
             body {
-                padding: 2rem; /* More padding on larger screens */
+                padding: 2rem;
             }
             .container {
                 padding: 2.5rem;
@@ -158,7 +165,7 @@
                 font-size: 2.5rem; /* Tailwind text-4xl */
             }
             .info-columns {
-                flex-direction: row; /* Side-by-side on medium screens and up */
+                flex-direction: row;
             }
             .info-section h2 {
                 font-size: 1.25rem; /* Tailwind text-xl */
@@ -174,7 +181,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+   <div class="container">
         <!-- Domain Name Display -->
         <h1 class="domain-name" id="domainNameDisplay"></h1>
         <p class="status">🚀 此稀有域名正在出售，潜力无限！ 🚀</p>
@@ -197,16 +204,20 @@
 <!--                 <p><strong>微信:</strong> YourWeChatID (可选)</p> -->
             </div>
         </div>
-
-        <!-- Footer -->
-        <div class="footer">
+    <div class="footer">
             <p>&copy; <span id="currentYear"></span> 域名权益所有者保留所有权利。</p>
             <p>期待与您携手，共创价值！</p>
+            <!-- Busuanzi Counter START -->
+            <span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"></span> 次</span>
+            <!-- 若要显示本页访问量，可以添加下面这行 -->
+            <!-- <span id="busuanzi_container_page_pv">本页阅读量 <span id="busuanzi_value_page_pv"></span> 次</span> -->
+            <!-- Busuanzi Counter END -->
         </div>
     </div>
-
-    <!-- Message Box Element -->
     <div id="messageBox" class="message-box"></div>
+ 
+    <!-- Busuanzi Script - 异步加载 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
     <script>
         // Function to show message box
@@ -217,23 +228,24 @@
                 return;
             }
             messageBox.textContent = message;
-            messageBox.className = 'message-box'; // Reset classes
+            messageBox.className = 'message-box';
             if (type === 'error') {
                 messageBox.classList.add('error');
             }
             messageBox.classList.add('show');
-
             setTimeout(() => {
                 messageBox.classList.remove('show');
             }, duration);
         }
 
+        let currentHostname = "您的域名"; // Default value
+
         // Dynamically display the domain name
         try {
             const domainNameElement = document.getElementById('domainNameDisplay');
             if (domainNameElement) {
-                const currentHostname = window.location.hostname;
-                domainNameElement.textContent = currentHostname || "您的域名";
+                currentHostname = window.location.hostname || "您的域名";
+                domainNameElement.textContent = currentHostname;
                 document.title = `${currentHostname} - 正在出售`;
             } else {
                 console.error("Error: Element with ID 'domainNameDisplay' not found.");
@@ -242,10 +254,12 @@
         } catch (e) {
             console.error("Error getting domain name: ", e);
             const domainNameElement = document.getElementById('domainNameDisplay');
-            if(domainNameElement) domainNameElement.textContent = "您的域名";
+            if(domainNameElement) domainNameElement.textContent = currentHostname;
             document.title = "域名出售";
             showMessage("获取域名信息失败。", 'error');
         }
+
+        // Local Visit counter logic removed
 
         // Set the current year in the footer
         try {
@@ -253,7 +267,7 @@
             if (currentYearElement) {
                 currentYearElement.textContent = new Date().getFullYear();
             } else {
-                console.warn("Warning: Element with ID 'currentYear' not found.");
+                // console.warn("Warning: Element with ID 'currentYear' not found.");
             }
         } catch (e) {
             console.error("Error setting current year: ", e);
