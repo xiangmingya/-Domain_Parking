@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  告诉搜索引擎不要索引此页面 -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>域名出售</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  使用在中国大陆地区更易访问的字体服务地址 -->
+    <link href="https://fonts.googleapis.cn/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #e5e7eb; /* Tailwind gray-200 for light text on dark bg */
+            text-align: center;
+            padding: 1rem; /* Default padding for small screens */
+            /* Adjusted gradient: lighter greens */
+            background: linear-gradient(270deg, #000000, #004d00, #008700, #000000); /* Black, Darker Green, Lighter Green, Black */
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
+            overflow-x: hidden; /* Prevent horizontal scroll from gradient animation */
+        }
+
+        .container {
+            background-color: rgba(17, 24, 39, 0.85); /* Tailwind gray-900 with opacity */
+            padding: 2rem; /* Adjusted padding */
+            border-radius: 1rem; /* Tailwind rounded-2xl */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2); /* Darker shadow */
+            max-width: 768px; /* Tailwind md:max-w-3xl, slightly wider for two columns, but not too wide */
+            width: 100%;
+            border: 1px solid #374151; /* Tailwind gray-700 border */
+            position: relative;
+            z-index: 1;
+        }
+
+        .domain-name {
+            font-size: 2.25rem; /* Tailwind text-3xl, adjusted for overall layout */
+            font-weight: 700;
+            color: #10b981; /* Tailwind emerald-500 - Bright Green */
+            margin-bottom: 1.5rem; /* Adjusted margin */
+            word-break: break-all;
+            line-height: 1.3;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .status {
+            font-size: 1.125rem; /* Tailwind text-lg */
+            color: #6ee7b7; /* Tailwind emerald-300 - Lighter Green */
+            margin-bottom: 2rem; /* Adjusted margin */
+            font-weight: 600;
+        }
+
+        /* Flex container for side-by-side sections */
+        .info-columns {
+            display: flex;
+            flex-direction: column; /* Stack on small screens */
+            gap: 1.5rem; /* Space between columns/rows */
+            margin-bottom: 2rem; /* Space below the columns section */
+        }
+
+        .info-section {
+            text-align: left;
+            padding: 1.25rem; /* Adjusted padding for sections */
+            background-color: rgba(31, 41, 55, 0.7); /* Tailwind gray-800 with opacity */
+            border-radius: 0.5rem;
+            border: 1px solid #4b5563; /* Tailwind gray-600 border for sections */
+            flex: 1; /* Allow sections to grow equally */
+            min-width: 0; /* Prevent flex overflow issues */
+        }
+
+        .info-section h2 {
+            font-size: 1.125rem; /* Tailwind text-lg, adjusted */
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #a7f3d0; /* Tailwind emerald-200 - Very Light Green */
+            border-bottom: 2px solid #059669; /* Tailwind emerald-600 accent */
+            padding-bottom: 0.5rem;
+        }
+
+        .info-section p {
+            font-size: 0.95rem; /* Adjusted for a tighter layout */
+            line-height: 1.6;
+            color: #d1d5db; /* Tailwind gray-300 */
+            margin-bottom: 0.5rem;
+        }
+
+        .info-section p strong {
+            color: #f3f4f6; /* Tailwind gray-100 */
+        }
+
+        .highlight {
+            color: #34d399; /* Tailwind emerald-400 - Medium Green */
+            font-weight: 700;
+            font-size: 1rem; /* Adjusted */
+        }
+
+        .contact-link {
+            color: #6ee7b7; /* Tailwind emerald-300 for links */
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+            color: #a7f3d0; /* Tailwind emerald-200 for link hover */
+        }
+
+        .footer {
+            margin-top: 2rem; /* Adjusted margin */
+            font-size: 0.875rem;
+            color: #9ca3af; /* Tailwind gray-400 */
+        }
+
+        /* Message Box Styling for Dark Theme */
+        .message-box {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #059669; /* Tailwind emerald-600 for success */
+            color: #ffffff; /* White text */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Darker shadow */
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            font-size: 1rem;
+        }
+        .message-box.show {
+            opacity: 1;
+        }
+        .message-box.error {
+            background-color: #ef4444; /* Tailwind red-500 for errors */
+            color: #ffffff;
+        }
+
+        /* Responsive adjustments for medium screens and up */
+        @media (min-width: 768px) { /* Tailwind 'md' breakpoint */
+            body {
+                padding: 2rem; /* More padding on larger screens */
+            }
+            .container {
+                padding: 2.5rem;
+            }
+            .domain-name {
+                font-size: 2.5rem; /* Tailwind text-4xl */
+            }
+            .info-columns {
+                flex-direction: row; /* Side-by-side on medium screens and up */
+            }
+            .info-section h2 {
+                font-size: 1.25rem; /* Tailwind text-xl */
+            }
+            .info-section p {
+                font-size: 1rem;
+            }
+             .highlight {
+                font-size: 1.125rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Domain Name Display -->
+        <h1 class="domain-name" id="domainNameDisplay"></h1>
+        <p class="status">🚀 此稀有域名正在出售，潜力无限！ 🚀</p>
+
+        <!-- Price and Contact Information Columns -->
+        <div class="info-columns">
+            <!-- Price Information Section -->
+            <div class="info-section price-info">
+                <h2>价格信息</h2>
+                <p>参考价格: <span class="highlight">¥10,000</span> (诚意可议)</p>
+                <p>我们对合作持开放态度，欢迎您提出报价或合作方案。</p>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="info-section contact-info">
+                <h2>联系方式</h2>
+                <p>对此域名感兴趣？请随时通过以下方式与我们取得联系：</p>
+                <p><strong>邮箱:</strong> <a href="mailto:xiangmingla@qq.com" class="contact-link">xiangmingla@qq.com</a></p>
+                <p><strong>电话:</strong> <a href="tel:+8613886238118" class="contact-link">+86 138 8623 8118</a> (可选)</p>
+<!--                 <p><strong>微信:</strong> YourWeChatID (可选)</p> -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; <span id="currentYear"></span> 域名权益所有者保留所有权利。</p>
+            <p>期待与您携手，共创价值！</p>
+        </div>
+    </div>
+
+    <!-- Message Box Element -->
+    <div id="messageBox" class="message-box"></div>
+
+    <script>
+        // Function to show message box
+        function showMessage(message, type = 'success', duration = 3000) {
+            const messageBox = document.getElementById('messageBox');
+            if (!messageBox) {
+                console.error("Message box element not found.");
+                return;
+            }
+            messageBox.textContent = message;
+            messageBox.className = 'message-box'; // Reset classes
+            if (type === 'error') {
+                messageBox.classList.add('error');
+            }
+            messageBox.classList.add('show');
+
+            setTimeout(() => {
+                messageBox.classList.remove('show');
+            }, duration);
+        }
+
+        // Dynamically display the domain name
+        try {
+            const domainNameElement = document.getElementById('domainNameDisplay');
+            if (domainNameElement) {
+                const currentHostname = window.location.hostname;
+                domainNameElement.textContent = currentHostname || "您的域名";
+                document.title = `${currentHostname} - 正在出售`;
+            } else {
+                console.error("Error: Element with ID 'domainNameDisplay' not found.");
+                showMessage("页面加载时发生错误，无法显示域名。", 'error');
+            }
+        } catch (e) {
+            console.error("Error getting domain name: ", e);
+            const domainNameElement = document.getElementById('domainNameDisplay');
+            if(domainNameElement) domainNameElement.textContent = "您的域名";
+            document.title = "域名出售";
+            showMessage("获取域名信息失败。", 'error');
+        }
+
+        // Set the current year in the footer
+        try {
+            const currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) {
+                currentYearElement.textContent = new Date().getFullYear();
+            } else {
+                console.warn("Warning: Element with ID 'currentYear' not found.");
+            }
+        } catch (e) {
+            console.error("Error setting current year: ", e);
+        }
+    </script>
+</body>
+</html>
